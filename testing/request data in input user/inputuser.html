@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input data api use inputan user in list</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .inputuser{
+            display: flex;
+            gap: 25px;
+            width: 100%;
+        }
+        .inputuser input{
+            display: inline-block;
+            width: 70%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid gray;
+            cursor: pointer;
+        }
+        .inputuser button{
+            display: inline-block;
+            padding:10px;
+            border-radius: 5px;
+            border: none;
+            background-color: gold;
+            color: white;
+        }
+        .inputuser button:hover{
+            opacity: 0.8;
+        }
+        .listinputan ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            list-style-type: none;
+        }
+        .listinputan li{
+            font-size: 1.25em;
+            font-weight: 350;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inputuser">
+            <input type="text" name="" id="" class="user">
+            <button class="search">search</button>
+        </div>
+        <div class="listinputan">
+            <ul>
+
+            </ul>
+        </div>
+    </div>
+    <script src="inputuser.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+Header pada Ajax JavaScript adalah bagian dari permintaan (request) yang dikirim oleh XMLHttpRequest (XHR) yang berisi informasi tambahan tentang permintaan. Header digunakan untuk memberikan informasi tambahan kepada server tentang apa yang diminta, seperti jenis data yang diharapkan dalam respons atau informasi otentikasi yang diperlukan untuk akses ke sumber daya yang dilindungi. Header bisa berisi berbagai jenis informasi, seperti:
+
+Content-Type: Menentukan tipe konten yang dikirim dalam body permintaan. Misalnya, untuk mengirim data dalam format JSON, header Content-Type harus diatur ke "application/json".
+
+Authorization: Digunakan untuk memberikan kredensial otentikasi ke server, seperti token akses atau informasi username dan password.
+
+Accept: Menentukan jenis konten yang diharapkan dalam respons. Misalnya, untuk meminta respons dalam format JSON, header Accept harus diatur ke "application/json".
+
+Cache-Control: Digunakan untuk memberikan instruksi ke browser atau server tentang bagaimana cache harus diperlakukan untuk permintaan ini.
+
+User-Agent: Digunakan untuk memberikan informasi tentang browser atau aplikasi yang melakukan permintaan.
+
+Header memungkinkan kita untuk menyesuaikan dan mengontrol permintaan yang dikirim ke server dan juga membantu server dalam memproses permintaan dengan benar. Pada umumnya, header dapat ditambahkan atau diatur pada objek XMLHttpRequest sebelum permintaan dikirim ke server.

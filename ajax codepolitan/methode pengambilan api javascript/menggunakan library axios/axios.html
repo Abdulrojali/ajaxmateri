@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-content:center ;
+        }
+        .center{
+            display: flex;
+            gap: 5px;
+        }
+        .center input{
+            display: inline-block;
+            width: 70%;
+            height: 25px;
+            border: none;
+            border-bottom: 1px solid black;
+            border-radius: 5px;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+        .center button{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+            border: none;
+            color: white;
+            background-color: orange;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .center button:hover{
+            background-color: white;
+            border: 1px solid black;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="center">
+            <input type="text" class="inputTeks" placeholder="masukkan url">
+            <button class="click">submit</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="axios.js"></script>
+</body>
+</html>

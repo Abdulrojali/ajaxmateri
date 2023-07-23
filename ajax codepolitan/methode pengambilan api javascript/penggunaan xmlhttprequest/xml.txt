@@ -1,0 +1,83 @@
+materi xml 
+
+
+methode xml
+
+1.digunakan untuk request data ke api atau json
+var data=xhmlhttprequest()
+
+2.digunakan untuk mengambil data dari url link api atau json
+data.open('get',url)
+
+3.digunakan untuk mengirim request dari data.open dan xhmlhttprequest
+data.send()
+
+
+4.proses yang akan di lakukan saat data di load
+data.onload()
+
+5.digunakan untuk cek status dari data request dari api
+data.onreadystate()
+
+6. cek data apabila terjadi error
+data.error()
+
+// property pada xml
+status=> digunakan untuk cek status ping dari url/proses data. 200 artinya berhasil, 404 gagal
+onreadystate=> digunakan untuk cek status data url.   4 artinya berhasil, 0/1 gagal
+
+
+A. onreadystatechange	Defines a function to be called when the readyState property changes
+         status	200: "OK"
+         403: "Forbidden"
+         404: "Page not found"
+         For a complete list go to the Http Messages Reference
+    statusText	       Returns the status-text (e.g. "OK" or "Not Found")
+
+B. readyState	Holds the status of the XMLHttpRequest.
+         0: request not initialized
+         1: server connection established
+         2: request received
+         3: processing request
+         4: request finished and response is ready
+
+C. (responseText)	get the response data as a string
+D. (responseXML)	get the response data as XML data
+E. getResponseHeader()	Returns specific header information from the server resource
+F. getAllResponseHeaders()	Returns all the header information from the server resource
+
+xml tidak support promise jadi harus menggunakan callback
+// contoh
+loadDoc("url-1", myFunction1);
+
+loadDoc("url-2", myFunction2);
+
+function loadDoc(url, cFunction) {
+  var xhttp;
+  xhttp=new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      cFunction(this);
+    }
+ };
+  xhttp.open("GET", url, true);
+  xhttp.send();
+}
+
+function myFunction1(xhttp) {
+  // action goes here
+}
+function myFunction2(xhttp) {
+  // action goes here
+}
+
+
+// perbedaan get dan post
+Permintaan HTTP POST menyediakan data tambahan dari klien (browser) ke server di badan pesan. 
+Sebaliknya, permintaan GET menyertakan semua data yang diperlukan di URL
+
+
+
+
+
+

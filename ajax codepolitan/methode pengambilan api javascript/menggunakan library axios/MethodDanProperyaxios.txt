@@ -1,0 +1,23 @@
+Berikut adalah beberapa method dan property yang sering digunakan pada library Axios untuk melakukan request API:
+
+axios(config) : Method ini digunakan untuk mengirim permintaan ke API. Parameter config adalah sebuah objek konfigurasi yang bisa berisi URL, method, header, parameter, dan lain-lain.
+
+axios.get(url, config) : Method ini digunakan untuk melakukan request dengan method GET ke API. Parameter pertama adalah URL endpoint, dan parameter kedua adalah objek konfigurasi opsional.
+
+axios.post(url, data, config) : Method ini digunakan untuk melakukan request dengan method POST ke API. Parameter pertama adalah URL endpoint, parameter kedua adalah data yang dikirim dalam body request, dan parameter ketiga adalah objek konfigurasi opsional.
+
+axios.put(url, data, config) : Method ini digunakan untuk melakukan request dengan method PUT ke API. Parameter pertama adalah URL endpoint, parameter kedua adalah data yang dikirim dalam body request, dan parameter ketiga adalah objek konfigurasi opsional.
+
+axios.delete(url, config) : Method ini digunakan untuk melakukan request dengan method DELETE ke API. Parameter pertama adalah URL endpoint, dan parameter kedua adalah objek konfigurasi opsional.
+
+then(response => {...}) : Method ini digunakan untuk menangani response dari server, ketika permintaan selesai. Parameter pertama dari callback function adalah response, yang berisi informasi mengenai status, header, dan body response.
+
+catch(error => {...}) : Method ini digunakan untuk menangani kesalahan ketika fetch gagal dilakukan, misalnya karena jaringan bermasalah atau server error.
+
+config.headers : Property ini berisi headers dari request.
+
+config.params : Property ini berisi parameter yang dikirim dalam query string.
+
+config.data : Property ini berisi data yang dikirim dalam body request, seperti objek FormData atau JSON string.
+
+Metode dan properti ini membantu untuk melakukan request API dengan mudah dan efisien menggunakan library Axios.

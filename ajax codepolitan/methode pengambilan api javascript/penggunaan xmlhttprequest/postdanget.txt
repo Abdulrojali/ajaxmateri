@@ -1,0 +1,37 @@
+perbedaan post dan get
+
+
+// get di gunakan untuk mengambil data pada server menggunakan url
+contoh 
+function login(url,sukses,failed){
+    let xml=new xmlhttprequest()
+
+    xml.open('get',url)
+    xml.send
+    
+    let data;
+    xml.onload=()=>{
+         data=JSON.parse(xml.response)
+    }
+    
+    xml.onreadystate=()=>{
+        if(this.readyState==4 && this.status ==200){
+            sukses('sukses')
+        }
+        else{
+            failed('failed')
+        }
+    }
+
+}
+
+
+login(url,function(sukses){
+console.log(sukses)
+},function(err){
+console.log(err)
+})
+
+
+
+// sedangkan post di gunakan untuk mengambil data pada server menggunakan url

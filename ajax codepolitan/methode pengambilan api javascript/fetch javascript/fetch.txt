@@ -1,0 +1,8 @@
+fetch adalah sebuah fungsi terbaru digunakan untuk mengambil api data 
+
+// contoh penggunaan fetch
+
+var data=fetch(url)
+.then((respon)=>respon.json)
+.then((hasil)=>console.log(hasil))
+.catch((failed)=>console.log(failed))

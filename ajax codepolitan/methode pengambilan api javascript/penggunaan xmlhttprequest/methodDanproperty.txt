@@ -1,0 +1,36 @@
+Berikut adalah beberapa metode yang sering digunakan dalam XMLHttpRequest (XHR):
+
+open() : Metode ini digunakan untuk membuka koneksi ke server. Metode ini menerima tiga parameter, yaitu method (GET, POST, PUT, DELETE), url endpoint yang ingin diakses, dan flag async (true/false) yang menunjukkan apakah request dilakukan secara asynchronous atau synchronous.
+
+send() : Metode ini digunakan untuk mengirim request ke server. Metode ini dapat menerima data sebagai parameter, seperti objek FormData atau JSON string.
+
+abort() : Metode ini digunakan untuk membatalkan request yang sedang berlangsung.
+
+setRequestHeader() : Metode ini digunakan untuk mengatur header pada request. Metode ini menerima dua parameter, yaitu nama header dan nilai header.
+
+getResponseHeader() : Metode ini digunakan untuk mendapatkan nilai dari header response. Metode ini menerima satu parameter, yaitu nama header yang ingin diambil nilainya.
+
+getAllResponseHeaders() : Metode ini digunakan untuk mendapatkan semua header response.
+
+Metode-metode ini digunakan untuk melakukan koneksi ke server dan mengambil atau mengirim data secara asynchronous melalui AJAX dengan menggunakan XMLHttpRequest (XHR). Selain itu, terdapat juga metode-metode lain yang dapat digunakan untuk memanipulasi data yang dihasilkan dari response.
+
+
+Berikut adalah beberapa property yang sering digunakan pada XMLHttpRequest (XHR):
+
+readyState : Properti ini menunjukkan status saat ini dari koneksi dengan server. Properti ini memiliki nilai dari 0 hingga 4, dengan masing-masing nilai menunjukkan tahap koneksi dengan server. Nilai 0 menunjukkan bahwa koneksi belum dibuka, sedangkan nilai 4 menunjukkan bahwa koneksi telah selesai.
+
+status : Properti ini menunjukkan status HTTP response dari server. Properti ini memiliki nilai seperti 200 (OK), 404 (Not Found), dan 500 (Internal Server Error).
+
+responseText : Properti ini berisi teks yang dikembalikan oleh server sebagai response.
+
+responseXML : Properti ini berisi dokumen XML yang dikembalikan oleh server sebagai response.
+
+onreadystatechange : Properti ini digunakan untuk menentukan fungsi yang akan dijalankan setiap kali readyState berubah.
+
+timeout : Properti ini menentukan waktu (dalam milidetik) sebelum request dianggap gagal jika tidak ada response dari server.
+
+withCredentials : Properti ini digunakan untuk menentukan apakah cookie atau credential lainnya harus dikirimkan dengan request.
+
+upload : Properti ini berisi objek XMLHttpRequestUpload, yang dapat digunakan untuk memantau progress dari pengiriman data ke server.
+
+Properti-properti ini berguna untuk memantau status dan mengelola data yang diambil atau dikirimkan melalui AJAX dengan menggunakan XMLHttpRequest (XHR).

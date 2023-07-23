@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .input{
+            display: flex;
+            gap: 6px;
+        }
+        .input input{
+            display: inline-block;
+            width:80%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+            border-bottom: 1px solid gray;
+            cursor: pointer;
+            padding: 0 15px;
+        }
+        .input button{
+            display: inline-block;
+            width: 65px;
+            height: 25px;
+            border: none;
+            color: white;
+            background-color: red;
+            cursor: pointer;
+        }
+        .input button:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="input">
+            <input type="text" class="link" placeholder="masukkan link">
+            <button class="click">submit</button>
+        </div>
+    </div>
+    <script src="latihanxml.js"></script>
+</body>
+</html>

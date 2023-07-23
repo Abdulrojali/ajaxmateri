@@ -1,0 +1,23 @@
+Berikut adalah beberapa method dan property yang sering digunakan pada Fetch API dalam JavaScript:
+
+fetch(url, options) : Method ini digunakan untuk mengambil resource dari server. Parameter pertama adalah URL endpoint, dan parameter kedua adalah objek konfigurasi opsional, seperti method, header, mode, dan lain-lain.
+
+then(response => {...}) : Method ini digunakan untuk menangani response dari server, ketika permintaan selesai. Parameter pertama dari callback function adalah response, yang berisi informasi mengenai status, header, dan body response.
+
+catch(error => {...}) : Method ini digunakan untuk menangani kesalahan ketika fetch gagal dilakukan, misalnya karena jaringan bermasalah atau server error.
+
+Response.json() : Method ini digunakan untuk mengubah response body ke dalam format JSON.
+
+Response.text() : Method ini digunakan untuk mengambil response body sebagai teks.
+
+Response.blob() : Method ini digunakan untuk mengambil response body sebagai objek Blob.
+
+Response.headers : Property ini berisi headers dari response.
+
+Request.method : Property ini berisi method dari request, seperti GET, POST, PUT, atau DELETE.
+
+Request.headers : Property ini berisi headers dari request.
+
+Request.body : Property ini berisi data yang dikirimkan dalam request, seperti objek FormData atau JSON string.
+
+Metode dan properti ini membantu untuk mengambil dan mengelola data dari server dengan Fetch API pada JavaScript.
